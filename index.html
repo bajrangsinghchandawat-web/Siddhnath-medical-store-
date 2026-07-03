@@ -3,71 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Siddhnath Medical Store</title>
+<title>Siddhnath Medical Store | 24×7 Medical Store</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f8fb;}
-header{background:#0b8f5a;color:#fff;padding:20px;text-align:center;}
-.hero{padding:40px 20px;text-align:center;}
-.hero h1{margin:0;font-size:32px;}
-.btn{display:inline-block;padding:12px 20px;margin:10px;border-radius:8px;text-decoration:none;color:#fff;font-weight:bold;}
-.whatsapp{background:#25D366;}
-.call{background:#007BFF;}
-.section{padding:20px;}
-.card{background:#fff;padding:20px;margin:15px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.15);}
-footer{background:#222;color:#fff;text-align:center;padding:20px;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f7fafc;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0b8f5a,#13b56d);
+padding:18px;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+margin:10px;
+transition:.3s;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.call{
+background:#007BFF;
+color:white;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.title{
+text-align:center;
+font-size:34px;
+color:#0b8f5a;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Siddhnath Medical Store</h1>
-<p>24×7 Medical Store | Singarwa | Ahmedabad</p>
+
+<nav>
+
+<div class="logo">💊 Siddhnath Medical Store</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Services</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
-<div class="hero">
-<h2>Welcome to Siddhnath Medical Store</h2>
-<p>All Medicines • Baby Care • Surgical • Cosmetics • Home Delivery</p>
+<section class="hero">
 
-<a class="btn whatsapp" href="https://wa.me/919773074643">Chat on WhatsApp</a>
+<h1>Your Trusted Medical Store</h1>
 
-<a class="btn call" href="tel:+919773074643">Call Now</a>
+<p>
+24×7 Medicines • Home Delivery • Baby Care • Surgical • Cosmetics
+</p>
 
-</div>
+<a class="btn whatsapp" href="https://wa.me/919773074643">💬 WhatsApp</a>
 
-<div class="section">
+<a class="btn call" href="tel:+919773074643">📞 Call Now</a>
 
-<div class="card">
-<h2>Our Services</h2>
-<ul>
-<li>All Medicines</li>
-<li>Home Delivery</li>
-<li>Self Pickup</li>
-<li>Baby Care Products</li>
-<li>Cosmetics</li>
-<li>Surgical Items</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Contact Us</h2>
-<p><b>Address:</b><br>
-Opposite Singarwa Police Chowki,<br>
-Singarwa, Ahmedabad</p>
-
-<p><b>Mobile:</b><br>
-9773074643<br>
-9724974643</p>
-
-</div>
-
-</div>
-
-<footer>
-
-© 2026 Siddhnath Medical Store
-
-</footer>
-
-</body>
-</html>
+</section>
