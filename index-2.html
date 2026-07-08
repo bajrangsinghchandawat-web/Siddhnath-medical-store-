@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Siddhnath Medical Store | 24x7 Medical Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f4f7f7;color:#222}
+header{position:sticky;top:0;background:linear-gradient(135deg,#0b8f5a,#16b96f);padding:14px 20px;z-index:999}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:auto}
+.logo{font-size:26px;font-weight:700;color:#fff}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{padding:100px 20px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero h1{font-size:46px}
+.hero p{margin:18px auto;max-width:700px;font-size:18px}
+.btn{display:inline-block;padding:14px 24px;border-radius:40px;text-decoration:none;color:#fff;font-weight:700;margin:8px}
+.w{background:#25D366}.c{background:#0d6efd}
+.section{max-width:1200px;margin:auto;padding:60px 20px}
+h2{text-align:center;color:#0b8f5a;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:#fff;padding:24px;border-radius:18px;box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.review{font-style:italic}
+iframe{width:100%;height:350px;border:0;border-radius:16px}
+footer{background:#0b8f5a;color:#fff;text-align:center;padding:25px}
+.float{position:fixed;right:18px;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:28px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.wh{bottom:90px;background:#25D366}.cl{bottom:20px;background:#0d6efd}
+.search{max-width:500px;margin:0 auto 30px}
+.search input{width:100%;padding:14px;border:2px solid #0b8f5a;border-radius:12px}
+#results li{margin:8px 0}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">💊 Siddhnath Medical Store</div><div><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div></nav></header>
+<section class="hero">
+<h1>Welcome to Siddhnath Medical Store</h1>
+<p>24×7 Medical Store • Home Delivery • BP & Diabetes Check • Surgical • Baby Care • Cosmetics</p>
+<a class="btn w" href="https://wa.me/919773074643">WhatsApp</a>
+<a class="btn c" href="tel:+919773074643">Call Now</a>
+</section>
+
+<section class="section">
+<h2>Search Medicine</h2>
+<div class="search">
+<input id="q" placeholder="Type medicine name..." onkeyup="searchMed()">
+<ul id="results"></ul>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>🩺 Free BP Check</h3><p>Free BP monitoring at our store.</p></div>
+<div class="card"><h3>🩸 Free Diabetes Check</h3><p>Free blood sugar check (offer conditions apply).</p></div>
+<div class="card"><h3>🚚 Home Delivery</h3><p>Fast medicine delivery in nearby areas.</p></div>
+<div class="card"><h3>👨‍⚕️ Specialist Consultation</h3><p>Consult Dr. Dhrumil Patel.</p></div>
+</div>
+</section>
+
+<section class="section" id="reviews">
+<h2>Customer Reviews</h2>
+<div class="grid">
+<div class="card review">⭐⭐⭐⭐⭐ Excellent service and genuine medicines.</div>
+<div class="card review">⭐⭐⭐⭐⭐ Fast home delivery.</div>
+<div class="card review">⭐⭐⭐⭐⭐ Friendly staff and affordable prices.</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Find Us</h2>
+<iframe src="https://www.google.com/maps?q=Singarwa%20Ahmedabad&output=embed"></iframe>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+<div class="card">
+<h3>Siddhnath Medical Store</h3>
+<p>📍 Singarwa, Ahmedabad</p>
+<p>📞 +91 97730 74643</p>
+<p>📧 bajrangsinghchandawat@gmail.com</p>
+<p>Open 24×7</p>
+</div>
+</section>
+
+<footer>© 2026 Siddhnath Medical Store | All Rights Reserved</footer>
+<a class="float wh" href="https://wa.me/919773074643">💬</a>
+<a class="float cl" href="tel:+919773074643">📞</a>
+<script>
+const meds=["Dolo 650","Cetirizine","Azithromycin","Pantoprazole","ORS","Paracetamol","Vitamin C","Liv 52","Dexorange"];
+function searchMed(){
+let q=document.getElementById("q").value.toLowerCase();
+let r=document.getElementById("results");
+r.innerHTML="";
+meds.filter(m=>m.toLowerCase().includes(q)).forEach(m=>{
+let li=document.createElement("li");li.textContent=m;r.appendChild(li);
+});
+}
+</script>
+</body></html>
